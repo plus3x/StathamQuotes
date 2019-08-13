@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     // Source: https://www.azquotes.com/author/27298-Jason_Statham
-    let quotes: [String] = [
+    let quotes = [
         "I've come from nowhere, and I'm not shy to go back.",
         "Your body is like a piece of dynamite. You can tap it with a pencil all day, but you'll never make it explode. You hit it once with a hammer: Bang! Get serious. Do 40 hard minutes, not an hour and half of nonsense. It's so much more rewarding.",
         "There is something about yourself that you don't know.",
@@ -40,8 +40,11 @@ class ViewController: UIViewController {
         "I used to play a lot of racket sports, tennis and squash."
     ]
 
+    @IBOutlet weak var copyrightLabel: UILabel!
+    @IBOutlet weak var moreButton: UIButton!
+    @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var quoteLabel: UILabel!
-    @IBOutlet weak var stathamPhoto: UIImageView!
+    var stathamPhoto = UIImageView(image: UIImage(named: "statham"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +52,14 @@ class ViewController: UIViewController {
         quoteLabel.numberOfLines = 0
         quoteLabel.lineBreakMode = .byWordWrapping
         quoteLabel.adjustsFontSizeToFitWidth = true
+        
+        stathamPhoto.frame = CGRect(
+            x: 40,
+            y: copyrightLabel.frame.height + moreButton.frame.height + 20,
+            width: stathamPhoto.frame.width,
+            height: stathamPhoto.frame.height)
+        
+        bottomView.addSubview(stathamPhoto)
         
         newQuote()
     }
@@ -60,11 +71,17 @@ class ViewController: UIViewController {
     private func newQuote() {
         quoteLabel.text = quotes.shuffled()[0]
         
-        quoteLabel.sizeToFit()
+        let newFrameSize = quoteLabel.sizeThatFits(CGSize(width: quoteLabel.frame.width, height: CGFloat.greatestFiniteMagnitude))
         
-        stathamPhoto.frame = CGRect(
-            x: 70,
-            y: quoteLabel.frame.height + 20,
+        quoteLabel.frame = CGRect(
+            x: 20,
+            y: 30,
+            width: quoteLabel.frame.width,
+            height: newFrameSize.height)
+        
+        bottomView.frame = CGRect(
+            x: 0,
+            y: newFrameSize.height + 35,
             width: stathamPhoto.frame.width,
             height: stathamPhoto.frame.height)
     }

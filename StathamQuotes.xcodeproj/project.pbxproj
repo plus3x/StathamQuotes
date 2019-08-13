@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B6D442D422F9B3CB004244F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D442D322F9B3CB004244F8 /* AppDelegate.swift */; };
-		B6D442D622F9B3CB004244F8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D442D522F9B3CB004244F8 /* MainViewController.swift */; };
+		B6D442D622F9B3CB004244F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D442D522F9B3CB004244F8 /* ViewController.swift */; };
 		B6D442D922F9B3CB004244F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D442D722F9B3CB004244F8 /* Main.storyboard */; };
 		B6D442DB22F9B3CC004244F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D442DA22F9B3CC004244F8 /* Assets.xcassets */; };
 		B6D442DE22F9B3CC004244F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D442DC22F9B3CC004244F8 /* LaunchScreen.storyboard */; };
 		B6D442E922F9B3CC004244F8 /* StathamQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D442E822F9B3CC004244F8 /* StathamQuotesTests.swift */; };
 		B6D442F422F9B3CC004244F8 /* StathamQuotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D442F322F9B3CC004244F8 /* StathamQuotesUITests.swift */; };
-		B6D4430222F9E01F004244F8 /* statham.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D4430122F9E01F004244F8 /* statham.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,7 @@
 /* Begin PBXFileReference section */
 		B6D442D022F9B3CB004244F8 /* StathamQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StathamQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D442D322F9B3CB004244F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6D442D522F9B3CB004244F8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B6D442D522F9B3CB004244F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B6D442D822F9B3CB004244F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6D442DA22F9B3CC004244F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6D442DD22F9B3CC004244F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +47,6 @@
 		B6D442EF22F9B3CC004244F8 /* StathamQuotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StathamQuotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D442F322F9B3CC004244F8 /* StathamQuotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StathamQuotesUITests.swift; sourceTree = "<group>"; };
 		B6D442F522F9B3CC004244F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6D4430122F9E01F004244F8 /* statham.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statham.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				B6D442D322F9B3CB004244F8 /* AppDelegate.swift */,
-				B6D442D522F9B3CB004244F8 /* MainViewController.swift */,
+				B6D442D522F9B3CB004244F8 /* ViewController.swift */,
 				B6D442D722F9B3CB004244F8 /* Main.storyboard */,
-				B6D4430122F9E01F004244F8 /* statham.png */,
 				B6D442DA22F9B3CC004244F8 /* Assets.xcassets */,
 				B6D442DC22F9B3CC004244F8 /* LaunchScreen.storyboard */,
 				B6D442DF22F9B3CC004244F8 /* Info.plist */,
@@ -232,7 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6D4430222F9E01F004244F8 /* statham.png in Resources */,
 				B6D442DE22F9B3CC004244F8 /* LaunchScreen.storyboard in Resources */,
 				B6D442DB22F9B3CC004244F8 /* Assets.xcassets in Resources */,
 				B6D442D922F9B3CB004244F8 /* Main.storyboard in Resources */,
@@ -260,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6D442D622F9B3CB004244F8 /* MainViewController.swift in Sources */,
+				B6D442D622F9B3CB004244F8 /* ViewController.swift in Sources */,
 				B6D442D422F9B3CB004244F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
